@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/sunshine_dark_blue"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="HISTORY"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="left"
+        android:text="Vocabulary List"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_search"
+        android:ems="10"
+        android:hint="Search for word"
+        android:background="@drawable/edit_text_background"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/vocabulary_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"/>
+
+</LinearLayout>

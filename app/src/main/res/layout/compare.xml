@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/compare_header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/sunshine_light_blue"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="WORK and WALK"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black" />
+
+    <fragment
+        android:id="@+id/youtube_play_view"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#dddddd"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/compare_word1_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/test_watch_video"
+            android:drawableEnd="@drawable/ic_plus_circle"
+            android:drawableRight="@drawable/ic_plus_circle"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_learning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/english_word_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Football"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/test_dark_blue" />
+
+                    <TextView
+                        android:id="@+id/pronounce_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/ˈfo͝otˌbôl/"
+                        android:textAppearance="?android:textAppearanceSmallInverse"
+                        android:textColor="@color/grey_700" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/listenBtn1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/volumn_selector" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/english_word_textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Football"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/test_dark_blue" />
+
+                    <TextView
+                        android:id="@+id/pronounce_textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/ˈfo͝otˌbôl/"
+                        android:textAppearance="?android:textAppearanceSmallInverse"
+                        android:textColor="@color/grey_700" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/listenBtn2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/volumn_selector" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#dddddd">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/result_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Pronounce Result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/speech_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/speech_selector"
+                    android:onClick="doTextToVoice" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_learned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="* You have learned this word"
+            android:layout_above="@id/test_compare_Btn"
+            android:textColor="#cd0001"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/test_compare_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:background="#00cd00"
+            android:text="TEST COMPARE"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

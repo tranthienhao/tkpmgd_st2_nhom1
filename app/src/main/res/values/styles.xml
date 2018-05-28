@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="TracNghiemTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/test_trac_nghiem</item>
+        <item name="colorPrimaryDark">@color/test_dark_blue</item>
+    </style>
+
+    <!-- Settings activity theme. -->
+    <style name="SettingsTheme" parent="AppTheme">
+    </style>
+
+    <!-- Main activity theme. -->
+    <style name="TestTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/ActionBar.Solid.Test.NoTitle</item>
+    </style>
+
+    <!-- main activity action bar styles -->
+    <style name="ActionBar.Solid.Test.NoTitle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="displayOptions">useLogo|showHome</item>
+        <!--<item name="logo">@drawable/ic_logo</item>-->
+    </style>
+
+    <!--<style name="ForecastListStyle">-->
+        <!--&lt;!&ndash; Here it's a stub.  In screens of sufficient width, this style includes modifications-->
+        <!--for two-pane layout &ndash;&gt;-->
+    <!--</style>-->
+
+</resources>

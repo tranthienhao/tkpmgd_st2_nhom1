@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nhom1.englishspeaking.testvocabulary.com.nhom1.englishspeaking.FragmentWordTest"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="16dp"
+        android:text="@string/listen_word_question"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/tracnghiem_word_Btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/volumn_selector"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/grey"
+            android:text="Tab to listen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_compare_word1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+
+            android:textColor="@color/black"
+            android:background="@drawable/trac_nghiem_selector"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <Button
+            android:id="@+id/test_compare_word2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:background="@drawable/trac_nghiem_selector"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+        <Button
+            android:id="@+id/test_compare_word3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:background="@drawable/trac_nghiem_selector"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <Button
+            android:id="@+id/test_compare_word4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:background="@drawable/trac_nghiem_selector"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

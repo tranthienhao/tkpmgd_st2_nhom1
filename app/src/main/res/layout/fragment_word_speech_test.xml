@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    tools:context="com.nhom1.englishspeaking.testvocabulary.com.nhom1.englishspeaking.FragmentWordSpeechTest">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="16dp"
+        android:text="@string/word_speech_test"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sunshine_light_blue"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_compare_word1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:background="@drawable/trac_nghiem_selector"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/speech_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/speech_selector" />
+
+            <TextView
+                android:id="@+id/result_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="....."
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sunshine_light_blue"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_compare_word2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+
+            android:textColor="@color/black"
+            android:background="@drawable/trac_nghiem_selector"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/speech_btn2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/speech_selector" />
+
+            <TextView
+                android:id="@+id/result_textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="....."
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

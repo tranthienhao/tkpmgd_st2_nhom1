@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nhom1.englishspeaking.testvocabulary.com.nhom1.englishspeaking.AboutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/sunshine_dark_blue"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="ABOUT US"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="NHÓM 1 _ SÁNG THỨ 2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="159dp"
+            android:background="#FAFAFA"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="@string/member"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="159dp"
+            android:background="#FAFAFA"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_rate"
+        android:text="GỬI ĐÁNH GIÁ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_start"
+        android:drawableStart="@drawable/ic_start"
+        android:background="@color/test_watch_video"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    </WebView>
+</LinearLayout>
